@@ -11,7 +11,7 @@ export const initdb = async () =>
     },
   });
 
-// TODO: Add logic to a method that accepts some content and adds it to the database
+// : Add logic to a method that accepts some content and adds it to the database
 export const putDb = async (content) => {
     console.log('Write in database');
   
@@ -31,7 +31,7 @@ export const putDb = async (content) => {
     const result = await request;
     console.log('🚀 - data saved to the database', result);
   };
-// TODO: Add logic for a method that gets all the content from the database
+// Logic for a method that gets all the content from the database
 export const getDb = async () => {
   console.log('GET from the database');
 
@@ -49,7 +49,7 @@ export const getDb = async () => {
 
   // Get confirmation of the request.
   const result = await request;
-  console.log('result.value', result?.content);
-  return result?.contentr;
+  console.log('result.value', result);
+  return result;
 };
 
