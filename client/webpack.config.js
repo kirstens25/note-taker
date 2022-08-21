@@ -3,6 +3,9 @@ const WebpackPwaManifest = require('webpack-pwa-manifest');
 const path = require('path');
 const { InjectManifest } = require('workbox-webpack-plugin');
 
+// DONE: Add and configure workbox plugins for a service worker and manifest file.
+// DONE: Add CSS loaders and babel to webpack.
+
 module.exports = () => {
   return {
     mode: 'development',
@@ -14,14 +17,16 @@ module.exports = () => {
       filename: '[name].bundle.js',
       path: path.resolve(__dirname, 'dist'),
     },
+    devServer: {
+      hot: 'only',
+    },
     plugins: [
       // Webpack plugin that generates our html file and injects our bundles. 
       new HtmlWebpackPlugin({
         template: './index.html',
-        title: 'Contact Cards'
+        title: 'JATE'
       }),
-     
-      // Injects our custom service worker
+      
       new InjectManifest({
         swSrc: './src-sw.js',
         swDest: 'src-sw.js',
@@ -31,13 +36,13 @@ module.exports = () => {
       new WebpackPwaManifest({
         fingerprints: false,
         inject: true,
-        name: 'JATE',
-        short_name: 'JATE',
-        description: 'A useful text editor for use in browser or locally on your machine.',
+        name: 'Jate',
+        short_name: 'jate',
+        description: 'Just another text editor to make your life easier',
         background_color: '#225ca3',
         theme_color: '#225ca3',
-        start_url: './',
-        publicPath: './',
+        start_url: '/',
+        publicPath: '/',
         icons: [
           {
             src: path.resolve('src/images/logo.png'),
