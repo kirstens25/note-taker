@@ -8,7 +8,7 @@ This project adapted an already created text editor application to allow offline
    - [Usage Information](#usage-information) 
    - [Contribution Guidelines](#contribution-guidelines) 
    - [Questions](#questions) 
-   - [Test Instructions](#test-instructions) 
+   - [Screenshots](#screenshots) 
 
 
 ## Installation Instructions
@@ -24,7 +24,10 @@ Contributors on this project are:
 kirstens25 - www.github.com/kirstens25
 
 ## Deployed Link
+The application is deployed here: https://text-editor12345678999.herokuapp.com/
 
+## Screenshots
+<img src="./images/screen-shot-jate.png" width="600px">
 
 ## Questions
 If you have any questions about this project, please contact the project creator: kirstens25 via email at kirstensegavac@gmail.com.
