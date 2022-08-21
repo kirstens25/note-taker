@@ -4,9 +4,6 @@
 This project adapted an already created text editor application to allow offline functionality and work as a PWA.
 
 ## Table of Contents
-    
-- [Description](#description) 
-- [Table Of Contents](#table-of-contents) 
    - [Installation Instructions](#installation-instructions) 
    - [Usage Information](#usage-information) 
    - [Contribution Guidelines](#contribution-guidelines) 
